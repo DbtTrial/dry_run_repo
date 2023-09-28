@@ -6,7 +6,7 @@ select
     p.product_id,
     p.category,
     p.product,
-    year(o.order_date) as year,
+    year(o.order_date) as yearOnly,
     sum(o.sales) as total_sales
 from orders o
 inner join products p on p.product_id = o.product_id
