@@ -1,4 +1,4 @@
-{{ CONFIG(MATERIALIZED="TABLE") }}
+{{ config(materialized='table') }}
 
 WITH
     CUSTOMERS AS (
