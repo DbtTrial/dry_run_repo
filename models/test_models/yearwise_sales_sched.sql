@@ -2,7 +2,6 @@ with
     products as (select product_id, category, product from SF_DBT_LANDING.RETAIL_CSV_DATA.products),
     orders as (select product_id, order_date, sales from SF_DBT_LANDING.RETAIL_CSV_DATA.order_demo)
     
-
 select
     p.product_id,
     p.category,
